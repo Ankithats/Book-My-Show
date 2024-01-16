@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid  dti">
+    <img class="img1" src="{{movies.banner.url}}" alt="">
+
+    <div class="container dtz d-flex">
+        <div class="my-5 ms-3">
+            <img class="img2" src="{{movies.poster.url}}" alt="">
+        </div>
+        <div class="  mx-3 px-3 dte py-5 text-light">
+            <h1 class="font-weight-bold">{{movies.name}}</h1>
+            <h2 style="padding-top: 5%;">{{movie.rating}}</h2>
+            <div class="card w-100 bg-secondary my-3  ">
+                <div class="card-body d-flex">
+                    <div class="me-3 text-light">
+                        <h5 class="card-title">Add tour ratings and review</h5>
+                        <p class="card-text">Your ratings matter</p>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-light">Rate now</a>
+                    </div>
+                </div>
+            </div>
+            <h2 style="margin-top: 5%;" type="btn" class=" btn bg-light text-dark mx-1 px-1 w-20">{{movies.type}}</h2>
+            <h2 style="margin-top: 5%;" type="btn" class=" btn bg-light text-dark mx-1 px-1 w-20">{{movies.language}}</h2>
+            <div class="">
+            
+                <h6 style="padding-top: 5%;">{{movies.duration}}  •  
+                {{movies.category}}  •  
+                {{movies.certificate}}  •  
+                {{movies.date}}</h6>
+           
+            </div>
+            <div class="mx-5 my-2">
+                 <a style="margin-top: 5%;" href="{% url 'update' movies.id %}" class="btn btn-light me-3 up">Update</a> 
+                 <a style="margin-top: 5%;" href="{% url 'delete' movies.id %}" class="btn btn-light  dl">Delete</a> 
+                
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="offcanvasRightLabel">Hey!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    <div class="offcanvas-body offf">
+        <img src="{% static 'images/ofcn log.jpg' %}" alt="">
+   </div>
+ </div> 
+
+
+{% endblock %}

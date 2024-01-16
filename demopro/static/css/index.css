@@ -1,0 +1,100 @@
+
+.logo img{
+    width: 140px;
+    height: 50px;
+    
+}
+/* .sgn{
+    width: 10%; */
+
+   
+/* } */
+
+.ad{
+    width: 40%;
+}
+.box{
+    width: 700px;
+}
+/* .bn{
+    padding: 0;
+    position: relative;
+    width:100%;
+    background-color: blue; */
+
+    /* height: 500px; */
+/*     
+}
+.bn img{
+    height: auto;
+  
+    width: 100%;
+
+  
+}
+.ps{
+    position: absolute;
+    top:15%;
+    left:10% ; */
+    /* background-color: aqua; */
+    /* width:10%; */
+/* }
+.ps img{
+    width: 300px;
+    border-radius: 7%;
+   
+}
+.det{
+  padding-left: 50%;
+  margin-top: 30%;
+}
+.dee{
+    padding-left: 60%;
+    margin-top: 70%;
+} */
+.dti{
+    width: 100%;
+    position: relative;
+}
+.dti .img1{
+    width: 100%;
+    height: auto;
+    
+}
+.dti img:hover{
+    background-color: linear-gradient(black);
+    opacity: 0.7;
+    
+    
+
+}
+.dtz{
+    position: absolute;
+    /* background-color: rgb(30, 33, 33); */
+    top: 25%;
+    left: 9%;
+    width: 60%;
+}
+.dtz .img2{
+    width: 17rem;
+    border-radius: 4%;
+}
+.dte {
+    width: 60%;
+}
+.upimg .img3{
+    width: 6rem;
+    border-radius: 5px;
+}
+.upimg input{
+    width: 70%;
+    height: 3vh;
+    font-size: 10px;
+}
+.up{
+    background-color: rgb(211, 6, 74);
+
+}
+.dl{
+    background-color: blue;
+}
